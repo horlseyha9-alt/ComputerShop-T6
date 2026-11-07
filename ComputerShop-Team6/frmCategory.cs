@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ComputerShop_Team6
 {
-    public partial class Form2 : Form
+    public partial class frmCategory : Form
     {
-        public Form2()
+        public frmCategory()
         {
             InitializeComponent();
         }
