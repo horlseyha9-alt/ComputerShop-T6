@@ -16,7 +16,7 @@ namespace ComputerShop_Team6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new Form1());
         }
     }
 }
