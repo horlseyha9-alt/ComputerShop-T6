@@ -20,12 +20,12 @@ namespace ComputerShop_Team6
 
             if (machineName.Equals("MSI", StringComparison.OrdinalIgnoreCase))
             {
-                ConnectionString = "Server=MSI; Database=ComputerShopTeam6; User Id=sa; Password=123; TrustServerCertificate=True;";
+                ConnectionString = "Server=MSI; Database=ComputerShopTeam6; User Id=saa; Password=123; TrustServerCertificate=True;";
             }
             else
             {
 
-                ConnectionString = "Server=100.118.213.113,1433; Database=ComputerShopTeam6; User Id=sa; Password=123; TrustServerCertificate=True;";
+                ConnectionString = "Server=100.118.213.113,1433; Database=ComputerShopTeam6; User Id=saa; Password=123; TrustServerCertificate=True;";
             }
 
             conn = new SqlConnection(ConnectionString);
