@@ -22,9 +22,6 @@ namespace ComputerShop_Team6
             //MessageBox.Show("Welcome to Computer Shop Management System. Please login to continue.", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
