@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,16 @@ namespace ComputerShop_Team6
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Welcome to Computer Shop Team 6!");
+            try
+            {
+                SqlConnection conn = DbConnection.GetSqlConnection();
+                conn.Open();
+                MessageBox.Show("Connection Success");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:"+ ex.Message);
+            }
         }
     }
 }
