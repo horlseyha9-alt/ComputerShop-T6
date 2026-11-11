@@ -28,7 +28,7 @@ namespace ComputerShop_Team6
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:"+ ex.Message);
+                MessageBox.Show("Error:" + ex.Message);
             }
         }
     }
