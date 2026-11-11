@@ -20,7 +20,7 @@ namespace ComputerShop_Team6
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show("Welcome to Computer Shop Management System. Please login to continue.", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Welcome to Computer Shop Management System. Please login to continue.", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
