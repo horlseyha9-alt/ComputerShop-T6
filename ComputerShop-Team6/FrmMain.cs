@@ -32,7 +32,7 @@ namespace ComputerShop_Team6
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            //OpenForm(new frmProduct());
+            OpenForm(new frmProduct());
         }
     }
 }
