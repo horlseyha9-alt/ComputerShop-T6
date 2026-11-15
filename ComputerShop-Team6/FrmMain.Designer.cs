@@ -57,9 +57,10 @@
             this.paMenu.Controls.Add(this.btnProduct);
             this.paMenu.Controls.Add(this.btnDeshbord);
             this.paMenu.Controls.Add(this.label1);
-            this.paMenu.Location = new System.Drawing.Point(12, 12);
+            this.paMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.paMenu.Location = new System.Drawing.Point(0, 0);
             this.paMenu.Name = "paMenu";
-            this.paMenu.Size = new System.Drawing.Size(200, 532);
+            this.paMenu.Size = new System.Drawing.Size(200, 615);
             this.paMenu.TabIndex = 0;
             // 
             // btnLogOut
@@ -206,19 +207,21 @@
             // 
             // paMain
             // 
-            this.paMain.Location = new System.Drawing.Point(218, 12);
+            this.paMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paMain.Location = new System.Drawing.Point(200, 0);
             this.paMain.Name = "paMain";
-            this.paMain.Size = new System.Drawing.Size(702, 532);
+            this.paMain.Size = new System.Drawing.Size(1203, 615);
             this.paMain.TabIndex = 1;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 556);
+            this.ClientSize = new System.Drawing.Size(1403, 615);
             this.Controls.Add(this.paMain);
             this.Controls.Add(this.paMenu);
             this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
