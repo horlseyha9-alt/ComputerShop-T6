@@ -42,7 +42,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtQtyInStock = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pbProductPicture = new System.Windows.Forms.PictureBox();
             this.cboSupplier = new System.Windows.Forms.ComboBox();
             this.cboCategory = new System.Windows.Forms.ComboBox();
             this.btnBrowe = new System.Windows.Forms.Button();
@@ -53,8 +52,10 @@
             this.chkActive = new System.Windows.Forms.CheckBox();
             this.chkInactive = new System.Windows.Forms.CheckBox();
             this.dgviewProduct = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProductPicture)).BeginInit();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pbProductPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgviewProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProductPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -177,15 +178,6 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Qty in Stock";
             // 
-            // pbProductPicture
-            // 
-            this.pbProductPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbProductPicture.Location = new System.Drawing.Point(796, 8);
-            this.pbProductPicture.Name = "pbProductPicture";
-            this.pbProductPicture.Size = new System.Drawing.Size(158, 129);
-            this.pbProductPicture.TabIndex = 16;
-            this.pbProductPicture.TabStop = false;
-            // 
             // cboSupplier
             // 
             this.cboSupplier.FormattingEnabled = true;
@@ -211,6 +203,7 @@
             this.btnBrowe.TabIndex = 19;
             this.btnBrowe.Text = "Browe...";
             this.btnBrowe.UseVisualStyleBackColor = true;
+            this.btnBrowe.Click += new System.EventHandler(this.btnBrowe_Click);
             // 
             // btnAddNew
             // 
@@ -221,6 +214,7 @@
             this.btnAddNew.TabIndex = 20;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.UseVisualStyleBackColor = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
             // btnUpdate
             // 
@@ -231,6 +225,7 @@
             this.btnUpdate.TabIndex = 21;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -241,6 +236,7 @@
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label9
             // 
@@ -263,6 +259,7 @@
             this.chkActive.TabIndex = 24;
             this.chkActive.Text = "Active";
             this.chkActive.UseVisualStyleBackColor = true;
+            this.chkActive.CheckedChanged += new System.EventHandler(this.chkActive_CheckedChanged);
             // 
             // chkInactive
             // 
@@ -270,24 +267,46 @@
             this.chkInactive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkInactive.Location = new System.Drawing.Point(160, 188);
             this.chkInactive.Name = "chkInactive";
-            this.chkInactive.Size = new System.Drawing.Size(93, 35);
+            this.chkInactive.Size = new System.Drawing.Size(91, 35);
             this.chkInactive.TabIndex = 25;
-            this.chkInactive.Text = "InActive";
+            this.chkInactive.Text = "Inactive";
             this.chkInactive.UseVisualStyleBackColor = true;
+            this.chkInactive.CheckedChanged += new System.EventHandler(this.chkInactive_CheckedChanged);
             // 
             // dgviewProduct
             // 
+            this.dgviewProduct.AllowUserToAddRows = false;
+            this.dgviewProduct.AllowUserToDeleteRows = false;
+            this.dgviewProduct.AllowUserToResizeColumns = false;
+            this.dgviewProduct.AllowUserToResizeRows = false;
             this.dgviewProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgviewProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgviewProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgviewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgviewProduct.Location = new System.Drawing.Point(12, 224);
             this.dgviewProduct.Name = "dgviewProduct";
             this.dgviewProduct.RowHeadersWidth = 51;
             this.dgviewProduct.RowTemplate.Height = 24;
+            this.dgviewProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgviewProduct.Size = new System.Drawing.Size(1158, 406);
             this.dgviewProduct.TabIndex = 26;
+            this.dgviewProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgviewProduct_CellClick);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // pbProductPicture
+            // 
+            this.pbProductPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbProductPicture.Image = global::ComputerShop_Team6.Properties.Resources.upload__2_;
+            this.pbProductPicture.Location = new System.Drawing.Point(796, 8);
+            this.pbProductPicture.Name = "pbProductPicture";
+            this.pbProductPicture.Size = new System.Drawing.Size(158, 129);
+            this.pbProductPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbProductPicture.TabIndex = 16;
+            this.pbProductPicture.TabStop = false;
             // 
             // frmProduct
             // 
@@ -323,8 +342,9 @@
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "frmProduct";
             this.Text = "frmProduct";
-            ((System.ComponentModel.ISupportInitialize)(this.pbProductPicture)).EndInit();
+            this.Load += new System.EventHandler(this.frmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgviewProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProductPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,5 +377,6 @@
         private System.Windows.Forms.CheckBox chkActive;
         private System.Windows.Forms.CheckBox chkInactive;
         private System.Windows.Forms.DataGridView dgviewProduct;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
