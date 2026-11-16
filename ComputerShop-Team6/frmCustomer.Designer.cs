@@ -34,25 +34,26 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtctid = new System.Windows.Forms.TextBox();
+            this.txtctname = new System.Windows.Forms.TextBox();
+            this.txtctphone = new System.Windows.Forms.TextBox();
+            this.txtctaddress = new System.Windows.Forms.TextBox();
+            this.txtctemail = new System.Windows.Forms.TextBox();
+            this.btnaddnew = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.dgcustomer = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgcustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(617, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 39);
+            this.label1.Size = new System.Drawing.Size(343, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Customer Information";
             // 
@@ -106,106 +107,111 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Email";
             // 
-            // textBox1
+            // txtctid
             // 
-            this.textBox1.Location = new System.Drawing.Point(315, 123);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 43);
-            this.textBox1.TabIndex = 6;
+            this.txtctid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtctid.Location = new System.Drawing.Point(315, 123);
+            this.txtctid.Multiline = true;
+            this.txtctid.Name = "txtctid";
+            this.txtctid.Size = new System.Drawing.Size(334, 43);
+            this.txtctid.TabIndex = 6;
             // 
-            // textBox2
+            // txtctname
             // 
-            this.textBox2.Location = new System.Drawing.Point(315, 183);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(334, 43);
-            this.textBox2.TabIndex = 7;
+            this.txtctname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtctname.Location = new System.Drawing.Point(315, 183);
+            this.txtctname.Multiline = true;
+            this.txtctname.Name = "txtctname";
+            this.txtctname.Size = new System.Drawing.Size(334, 43);
+            this.txtctname.TabIndex = 7;
             // 
-            // textBox3
+            // txtctphone
             // 
-            this.textBox3.Location = new System.Drawing.Point(315, 257);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(334, 43);
-            this.textBox3.TabIndex = 8;
+            this.txtctphone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtctphone.Location = new System.Drawing.Point(315, 257);
+            this.txtctphone.Multiline = true;
+            this.txtctphone.Name = "txtctphone";
+            this.txtctphone.Size = new System.Drawing.Size(334, 43);
+            this.txtctphone.TabIndex = 8;
             // 
-            // textBox4
+            // txtctaddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(848, 123);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(334, 92);
-            this.textBox4.TabIndex = 9;
+            this.txtctaddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtctaddress.Location = new System.Drawing.Point(848, 123);
+            this.txtctaddress.Multiline = true;
+            this.txtctaddress.Name = "txtctaddress";
+            this.txtctaddress.Size = new System.Drawing.Size(334, 92);
+            this.txtctaddress.TabIndex = 9;
             // 
-            // textBox5
+            // txtctemail
             // 
-            this.textBox5.Location = new System.Drawing.Point(851, 257);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(331, 43);
-            this.textBox5.TabIndex = 10;
+            this.txtctemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtctemail.Location = new System.Drawing.Point(851, 257);
+            this.txtctemail.Multiline = true;
+            this.txtctemail.Name = "txtctemail";
+            this.txtctemail.Size = new System.Drawing.Size(331, 43);
+            this.txtctemail.TabIndex = 10;
             // 
-            // button1
+            // btnaddnew
             // 
-            this.button1.BackColor = System.Drawing.Color.Blue;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(1284, 72);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 68);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Add New";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnaddnew.BackColor = System.Drawing.Color.Blue;
+            this.btnaddnew.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddnew.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnaddnew.Location = new System.Drawing.Point(1284, 72);
+            this.btnaddnew.Name = "btnaddnew";
+            this.btnaddnew.Size = new System.Drawing.Size(219, 68);
+            this.btnaddnew.TabIndex = 11;
+            this.btnaddnew.Text = "Add New";
+            this.btnaddnew.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.BackColor = System.Drawing.Color.Blue;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(1284, 148);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 73);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnupdate.BackColor = System.Drawing.Color.Blue;
+            this.btnupdate.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnupdate.Location = new System.Drawing.Point(1284, 148);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(219, 73);
+            this.btnupdate.TabIndex = 12;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btndelete
             // 
-            this.button3.BackColor = System.Drawing.Color.Blue;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(1284, 227);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 73);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btndelete.BackColor = System.Drawing.Color.Blue;
+            this.btndelete.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btndelete.Location = new System.Drawing.Point(1284, 227);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(219, 73);
+            this.btndelete.TabIndex = 13;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgcustomer
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 328);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1523, 332);
-            this.dataGridView1.TabIndex = 14;
+            this.dgcustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgcustomer.Location = new System.Drawing.Point(30, 328);
+            this.dgcustomer.Name = "dgcustomer";
+            this.dgcustomer.RowHeadersWidth = 51;
+            this.dgcustomer.RowTemplate.Height = 24;
+            this.dgcustomer.Size = new System.Drawing.Size(1523, 332);
+            this.dgcustomer.TabIndex = 14;
             // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1593, 717);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgcustomer);
+            this.Controls.Add(this.btndelete);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btnaddnew);
+            this.Controls.Add(this.txtctemail);
+            this.Controls.Add(this.txtctaddress);
+            this.Controls.Add(this.txtctphone);
+            this.Controls.Add(this.txtctname);
+            this.Controls.Add(this.txtctid);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -214,7 +220,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmCustomer";
             this.Text = "frmCustomer";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgcustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,14 +234,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtctid;
+        private System.Windows.Forms.TextBox txtctname;
+        private System.Windows.Forms.TextBox txtctphone;
+        private System.Windows.Forms.TextBox txtctaddress;
+        private System.Windows.Forms.TextBox txtctemail;
+        private System.Windows.Forms.Button btnaddnew;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.DataGridView dgcustomer;
     }
 }

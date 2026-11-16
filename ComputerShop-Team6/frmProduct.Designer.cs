@@ -277,6 +277,10 @@
             // 
             // dgviewProduct
             // 
+            this.dgviewProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgviewProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgviewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgviewProduct.Location = new System.Drawing.Point(12, 224);
             this.dgviewProduct.Name = "dgviewProduct";
@@ -287,8 +291,7 @@
             // 
             // frmProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 31F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1184, 646);
             this.Controls.Add(this.dgviewProduct);
             this.Controls.Add(this.chkInactive);
@@ -316,9 +319,9 @@
             this.Controls.Add(this.txtSKU);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Khmer OS Battambang", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "frmProduct";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProduct";
             ((System.ComponentModel.ISupportInitialize)(this.pbProductPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgviewProduct)).EndInit();
