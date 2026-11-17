@@ -54,6 +54,7 @@
             this.dgviewProduct = new System.Windows.Forms.DataGridView();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pbProductPicture = new System.Windows.Forms.PictureBox();
+            this.txtProductId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgviewProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductPicture)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 31);
+            this.label1.Size = new System.Drawing.Size(40, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "SKU";
             // 
@@ -72,7 +73,7 @@
             this.txtSKU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSKU.Location = new System.Drawing.Point(140, 8);
             this.txtSKU.Name = "txtSKU";
-            this.txtSKU.Size = new System.Drawing.Size(251, 39);
+            this.txtSKU.Size = new System.Drawing.Size(251, 33);
             this.txtSKU.TabIndex = 1;
             // 
             // txtProductName
@@ -80,7 +81,7 @@
             this.txtProductName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtProductName.Location = new System.Drawing.Point(140, 53);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(251, 39);
+            this.txtProductName.Size = new System.Drawing.Size(251, 33);
             this.txtProductName.TabIndex = 3;
             // 
             // label2
@@ -88,7 +89,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 31);
+            this.label2.Size = new System.Drawing.Size(102, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Product Name";
             // 
@@ -97,7 +98,7 @@
             this.txtBarcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBarcode.Location = new System.Drawing.Point(140, 98);
             this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(251, 39);
+            this.txtBarcode.Size = new System.Drawing.Size(251, 33);
             this.txtBarcode.TabIndex = 5;
             // 
             // label3
@@ -105,7 +106,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 106);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 31);
+            this.label3.Size = new System.Drawing.Size(65, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Barcode";
             // 
@@ -114,7 +115,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(13, 146);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 31);
+            this.label4.Size = new System.Drawing.Size(70, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Category";
             // 
@@ -123,7 +124,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(405, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 31);
+            this.label5.Size = new System.Drawing.Size(64, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Supplier";
             // 
@@ -132,7 +133,7 @@
             this.txtUnitPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUnitPrice.Location = new System.Drawing.Point(518, 53);
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(251, 39);
+            this.txtUnitPrice.Size = new System.Drawing.Size(251, 33);
             this.txtUnitPrice.TabIndex = 11;
             // 
             // label6
@@ -140,7 +141,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(405, 61);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 31);
+            this.label6.Size = new System.Drawing.Size(73, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Unit Price";
             // 
@@ -149,7 +150,7 @@
             this.txtSalePrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSalePrice.Location = new System.Drawing.Point(518, 98);
             this.txtSalePrice.Name = "txtSalePrice";
-            this.txtSalePrice.Size = new System.Drawing.Size(251, 39);
+            this.txtSalePrice.Size = new System.Drawing.Size(251, 33);
             this.txtSalePrice.TabIndex = 13;
             // 
             // label7
@@ -157,7 +158,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(405, 106);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 31);
+            this.label7.Size = new System.Drawing.Size(76, 25);
             this.label7.TabIndex = 12;
             this.label7.Text = "Sale Price";
             // 
@@ -166,7 +167,7 @@
             this.txtQtyInStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQtyInStock.Location = new System.Drawing.Point(518, 143);
             this.txtQtyInStock.Name = "txtQtyInStock";
-            this.txtQtyInStock.Size = new System.Drawing.Size(251, 39);
+            this.txtQtyInStock.Size = new System.Drawing.Size(251, 33);
             this.txtQtyInStock.TabIndex = 15;
             // 
             // label8
@@ -174,7 +175,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(405, 151);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 31);
+            this.label8.Size = new System.Drawing.Size(88, 25);
             this.label8.TabIndex = 14;
             this.label8.Text = "Qty in Stock";
             // 
@@ -183,7 +184,7 @@
             this.cboSupplier.FormattingEnabled = true;
             this.cboSupplier.Location = new System.Drawing.Point(518, 8);
             this.cboSupplier.Name = "cboSupplier";
-            this.cboSupplier.Size = new System.Drawing.Size(251, 39);
+            this.cboSupplier.Size = new System.Drawing.Size(251, 33);
             this.cboSupplier.TabIndex = 17;
             // 
             // cboCategory
@@ -191,7 +192,7 @@
             this.cboCategory.FormattingEnabled = true;
             this.cboCategory.Location = new System.Drawing.Point(140, 143);
             this.cboCategory.Name = "cboCategory";
-            this.cboCategory.Size = new System.Drawing.Size(251, 39);
+            this.cboCategory.Size = new System.Drawing.Size(251, 33);
             this.cboCategory.TabIndex = 18;
             // 
             // btnBrowe
@@ -243,7 +244,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(11, 190);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 31);
+            this.label9.Size = new System.Drawing.Size(49, 25);
             this.label9.TabIndex = 23;
             this.label9.Text = "FIlter:";
             // 
@@ -255,7 +256,7 @@
             this.chkActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkActive.Location = new System.Drawing.Point(75, 188);
             this.chkActive.Name = "chkActive";
-            this.chkActive.Size = new System.Drawing.Size(79, 35);
+            this.chkActive.Size = new System.Drawing.Size(66, 29);
             this.chkActive.TabIndex = 24;
             this.chkActive.Text = "Active";
             this.chkActive.UseVisualStyleBackColor = true;
@@ -267,7 +268,7 @@
             this.chkInactive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkInactive.Location = new System.Drawing.Point(160, 188);
             this.chkInactive.Name = "chkInactive";
-            this.chkInactive.Size = new System.Drawing.Size(91, 35);
+            this.chkInactive.Size = new System.Drawing.Size(77, 29);
             this.chkInactive.TabIndex = 25;
             this.chkInactive.Text = "Inactive";
             this.chkInactive.UseVisualStyleBackColor = true;
@@ -304,14 +305,23 @@
             this.pbProductPicture.Location = new System.Drawing.Point(796, 8);
             this.pbProductPicture.Name = "pbProductPicture";
             this.pbProductPicture.Size = new System.Drawing.Size(158, 129);
-            this.pbProductPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbProductPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProductPicture.TabIndex = 16;
             this.pbProductPicture.TabStop = false;
+            // 
+            // txtProductId
+            // 
+            this.txtProductId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtProductId.Location = new System.Drawing.Point(273, 182);
+            this.txtProductId.Name = "txtProductId";
+            this.txtProductId.Size = new System.Drawing.Size(69, 33);
+            this.txtProductId.TabIndex = 27;
             // 
             // frmProduct
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1184, 646);
+            this.Controls.Add(this.txtProductId);
             this.Controls.Add(this.dgviewProduct);
             this.Controls.Add(this.chkInactive);
             this.Controls.Add(this.chkActive);
@@ -378,5 +388,6 @@
         private System.Windows.Forms.CheckBox chkInactive;
         private System.Windows.Forms.DataGridView dgviewProduct;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox txtProductId;
     }
 }
