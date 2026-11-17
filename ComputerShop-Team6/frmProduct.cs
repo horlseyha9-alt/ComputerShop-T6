@@ -43,7 +43,7 @@ namespace ComputerShop_Team6
             // Bind data to the ComboBox
             cboCategory.DataSource = dt;
             cboCategory.DisplayMember = "CategoryName";
-            cboCategory.ValueMember = "CategoryID";
+            cboCategory.ValueMember = "CategoryId";
 
             cboCategory.SelectedIndex = -1; // Optional: leaves it unselected by default
         }
@@ -60,7 +60,7 @@ namespace ComputerShop_Team6
             // Bind data to the ComboBox
             cboSupplier.DataSource = dt;
             cboSupplier.DisplayMember = "SupplierName";
-            cboSupplier.ValueMember = "SupplierID";
+            cboSupplier.ValueMember = "SupplierId";
 
             cboSupplier.SelectedIndex = -1; // Optional: leaves it unselected by default
         }
