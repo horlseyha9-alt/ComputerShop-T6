@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.paMenu = new System.Windows.Forms.Panel();
+            this.btnSale = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnUser = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnSaleDetail = new System.Windows.Forms.Button();
-            this.btnSale = new System.Windows.Forms.Button();
             this.btnSupplier = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
@@ -59,10 +59,25 @@
             this.paMenu.Controls.Add(this.label1);
             this.paMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.paMenu.Location = new System.Drawing.Point(0, 0);
-            this.paMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.paMenu.Margin = new System.Windows.Forms.Padding(2);
             this.paMenu.Name = "paMenu";
             this.paMenu.Size = new System.Drawing.Size(150, 500);
             this.paMenu.TabIndex = 0;
+            // 
+            // btnSale
+            // 
+            this.btnSale.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnSale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSale.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSale.ForeColor = System.Drawing.Color.White;
+            this.btnSale.Location = new System.Drawing.Point(5, 83);
+            this.btnSale.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSale.Name = "btnSale";
+            this.btnSale.Size = new System.Drawing.Size(116, 33);
+            this.btnSale.TabIndex = 5;
+            this.btnSale.Text = "New Sales";
+            this.btnSale.UseVisualStyleBackColor = false;
+            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
             // 
             // btnLogOut
             // 
@@ -71,7 +86,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Location = new System.Drawing.Point(2, 396);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(118, 33);
             this.btnLogOut.TabIndex = 10;
@@ -85,7 +100,7 @@
             this.btnUser.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUser.ForeColor = System.Drawing.Color.White;
             this.btnUser.Location = new System.Drawing.Point(4, 344);
-            this.btnUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(116, 33);
             this.btnUser.TabIndex = 9;
@@ -99,7 +114,7 @@
             this.btnEmployee.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.ForeColor = System.Drawing.Color.White;
             this.btnEmployee.Location = new System.Drawing.Point(4, 306);
-            this.btnEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(116, 33);
             this.btnEmployee.TabIndex = 8;
@@ -113,7 +128,7 @@
             this.btnCustomer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Location = new System.Drawing.Point(5, 231);
-            this.btnCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(116, 33);
             this.btnCustomer.TabIndex = 7;
@@ -127,27 +142,12 @@
             this.btnSaleDetail.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaleDetail.ForeColor = System.Drawing.Color.White;
             this.btnSaleDetail.Location = new System.Drawing.Point(4, 268);
-            this.btnSaleDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSaleDetail.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaleDetail.Name = "btnSaleDetail";
             this.btnSaleDetail.Size = new System.Drawing.Size(116, 33);
             this.btnSaleDetail.TabIndex = 6;
             this.btnSaleDetail.Text = "Sale Detail";
             this.btnSaleDetail.UseVisualStyleBackColor = false;
-            // 
-            // btnSale
-            // 
-            this.btnSale.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnSale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSale.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSale.ForeColor = System.Drawing.Color.White;
-            this.btnSale.Location = new System.Drawing.Point(5, 83);
-            this.btnSale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSale.Name = "btnSale";
-            this.btnSale.Size = new System.Drawing.Size(116, 33);
-            this.btnSale.TabIndex = 5;
-            this.btnSale.Text = "New Sales";
-            this.btnSale.UseVisualStyleBackColor = false;
-            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
             // 
             // btnSupplier
             // 
@@ -156,7 +156,7 @@
             this.btnSupplier.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupplier.ForeColor = System.Drawing.Color.White;
             this.btnSupplier.Location = new System.Drawing.Point(5, 194);
-            this.btnSupplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.btnSupplier.Name = "btnSupplier";
             this.btnSupplier.Size = new System.Drawing.Size(116, 33);
             this.btnSupplier.TabIndex = 4;
@@ -170,12 +170,13 @@
             this.btnCategory.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategory.ForeColor = System.Drawing.Color.White;
             this.btnCategory.Location = new System.Drawing.Point(5, 157);
-            this.btnCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCategory.Margin = new System.Windows.Forms.Padding(2);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(116, 33);
             this.btnCategory.TabIndex = 3;
             this.btnCategory.Text = "Category";
             this.btnCategory.UseVisualStyleBackColor = false;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // btnProduct
             // 
@@ -184,7 +185,7 @@
             this.btnProduct.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Location = new System.Drawing.Point(5, 120);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(116, 33);
             this.btnProduct.TabIndex = 2;
@@ -199,7 +200,7 @@
             this.btnDeshbord.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeshbord.ForeColor = System.Drawing.Color.White;
             this.btnDeshbord.Location = new System.Drawing.Point(5, 46);
-            this.btnDeshbord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeshbord.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeshbord.Name = "btnDeshbord";
             this.btnDeshbord.Size = new System.Drawing.Size(116, 33);
             this.btnDeshbord.TabIndex = 1;
@@ -222,7 +223,7 @@
             // 
             this.paMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paMain.Location = new System.Drawing.Point(150, 0);
-            this.paMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.paMain.Margin = new System.Windows.Forms.Padding(2);
             this.paMain.Name = "paMain";
             this.paMain.Size = new System.Drawing.Size(902, 500);
             this.paMain.TabIndex = 1;
@@ -234,7 +235,7 @@
             this.ClientSize = new System.Drawing.Size(1052, 500);
             this.Controls.Add(this.paMain);
             this.Controls.Add(this.paMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
