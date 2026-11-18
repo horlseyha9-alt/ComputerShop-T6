@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgcustomer = new System.Windows.Forms.DataGridView();
+            this.dgsupplier = new System.Windows.Forms.DataGridView();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnaddnew = new System.Windows.Forms.Button();
-            this.txtctphone = new System.Windows.Forms.TextBox();
-            this.txtctname = new System.Windows.Forms.TextBox();
-            this.txtctid = new System.Windows.Forms.TextBox();
+            this.txtsuppliername = new System.Windows.Forms.TextBox();
+            this.txtcompayname = new System.Windows.Forms.TextBox();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,12 +46,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtdob = new System.Windows.Forms.TextBox();
+            this.txtpob = new System.Windows.Forms.TextBox();
+            this.txtaddress = new System.Windows.Forms.TextBox();
+            this.txtphonenumber = new System.Windows.Forms.TextBox();
+            this.pu1 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,18 +60,18 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgcustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgsupplier)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pu1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgcustomer
+            // dgsupplier
             // 
-            this.dgcustomer.AllowUserToAddRows = false;
-            this.dgcustomer.AllowUserToDeleteRows = false;
-            this.dgcustomer.AllowUserToOrderColumns = true;
-            this.dgcustomer.AllowUserToResizeColumns = false;
-            this.dgcustomer.AllowUserToResizeRows = false;
-            this.dgcustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgsupplier.AllowUserToAddRows = false;
+            this.dgsupplier.AllowUserToDeleteRows = false;
+            this.dgsupplier.AllowUserToOrderColumns = true;
+            this.dgsupplier.AllowUserToResizeColumns = false;
+            this.dgsupplier.AllowUserToResizeRows = false;
+            this.dgsupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -82,9 +81,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgcustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgcustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgcustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgsupplier.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgsupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgsupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
@@ -94,12 +93,12 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.dgcustomer.Location = new System.Drawing.Point(63, 569);
-            this.dgcustomer.Name = "dgcustomer";
-            this.dgcustomer.RowHeadersWidth = 51;
-            this.dgcustomer.RowTemplate.Height = 24;
-            this.dgcustomer.Size = new System.Drawing.Size(1517, 332);
-            this.dgcustomer.TabIndex = 29;
+            this.dgsupplier.Location = new System.Drawing.Point(63, 569);
+            this.dgsupplier.Name = "dgsupplier";
+            this.dgsupplier.RowHeadersWidth = 51;
+            this.dgsupplier.RowTemplate.Height = 24;
+            this.dgsupplier.Size = new System.Drawing.Size(1517, 332);
+            this.dgsupplier.TabIndex = 29;
             // 
             // btndelete
             // 
@@ -136,33 +135,34 @@
             this.btnaddnew.TabIndex = 26;
             this.btnaddnew.Text = "Add New";
             this.btnaddnew.UseVisualStyleBackColor = false;
+            this.btnaddnew.Click += new System.EventHandler(this.btnaddnew_Click);
             // 
-            // txtctphone
+            // txtsuppliername
             // 
-            this.txtctphone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctphone.Location = new System.Drawing.Point(357, 236);
-            this.txtctphone.Multiline = true;
-            this.txtctphone.Name = "txtctphone";
-            this.txtctphone.Size = new System.Drawing.Size(262, 45);
-            this.txtctphone.TabIndex = 23;
+            this.txtsuppliername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsuppliername.Location = new System.Drawing.Point(357, 236);
+            this.txtsuppliername.Multiline = true;
+            this.txtsuppliername.Name = "txtsuppliername";
+            this.txtsuppliername.Size = new System.Drawing.Size(262, 45);
+            this.txtsuppliername.TabIndex = 23;
             // 
-            // txtctname
+            // txtcompayname
             // 
-            this.txtctname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctname.Location = new System.Drawing.Point(357, 179);
-            this.txtctname.Multiline = true;
-            this.txtctname.Name = "txtctname";
-            this.txtctname.Size = new System.Drawing.Size(262, 44);
-            this.txtctname.TabIndex = 22;
+            this.txtcompayname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcompayname.Location = new System.Drawing.Point(357, 179);
+            this.txtcompayname.Multiline = true;
+            this.txtcompayname.Name = "txtcompayname";
+            this.txtcompayname.Size = new System.Drawing.Size(262, 44);
+            this.txtcompayname.TabIndex = 22;
             // 
-            // txtctid
+            // txtid
             // 
-            this.txtctid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctid.Location = new System.Drawing.Point(357, 114);
-            this.txtctid.Multiline = true;
-            this.txtctid.Name = "txtctid";
-            this.txtctid.Size = new System.Drawing.Size(262, 44);
-            this.txtctid.TabIndex = 21;
+            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtid.Location = new System.Drawing.Point(357, 114);
+            this.txtid.Multiline = true;
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(262, 44);
+            this.txtid.TabIndex = 21;
             // 
             // label6
             // 
@@ -265,58 +265,49 @@
             this.label10.TabIndex = 33;
             this.label10.Text = "Photo";
             // 
-            // textBox1
+            // txtdob
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(357, 296);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 46);
-            this.textBox1.TabIndex = 34;
+            this.txtdob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdob.Location = new System.Drawing.Point(357, 296);
+            this.txtdob.Multiline = true;
+            this.txtdob.Name = "txtdob";
+            this.txtdob.Size = new System.Drawing.Size(262, 46);
+            this.txtdob.TabIndex = 34;
             // 
-            // textBox2
+            // txtpob
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(357, 363);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 45);
-            this.textBox2.TabIndex = 35;
+            this.txtpob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpob.Location = new System.Drawing.Point(357, 363);
+            this.txtpob.Multiline = true;
+            this.txtpob.Name = "txtpob";
+            this.txtpob.Size = new System.Drawing.Size(262, 45);
+            this.txtpob.TabIndex = 35;
             // 
-            // textBox3
+            // txtaddress
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(881, 114);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(334, 121);
-            this.textBox3.TabIndex = 36;
+            this.txtaddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtaddress.Location = new System.Drawing.Point(881, 114);
+            this.txtaddress.Multiline = true;
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.Size = new System.Drawing.Size(334, 121);
+            this.txtaddress.TabIndex = 36;
             // 
-            // textBox4
+            // txtphonenumber
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(881, 285);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(334, 45);
-            this.textBox4.TabIndex = 37;
+            this.txtphonenumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtphonenumber.Location = new System.Drawing.Point(881, 285);
+            this.txtphonenumber.Multiline = true;
+            this.txtphonenumber.Name = "txtphonenumber";
+            this.txtphonenumber.Size = new System.Drawing.Size(334, 45);
+            this.txtphonenumber.TabIndex = 37;
             // 
-            // textBox5
+            // pu1
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(881, 365);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(334, 45);
-            this.textBox5.TabIndex = 38;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(1352, 68);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(246, 262);
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
+            this.pu1.Location = new System.Drawing.Point(1352, 68);
+            this.pu1.Name = "pu1";
+            this.pu1.Size = new System.Drawing.Size(246, 262);
+            this.pu1.TabIndex = 39;
+            this.pu1.TabStop = false;
             // 
             // Column1
             // 
@@ -386,23 +377,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1709, 773);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pu1);
+            this.Controls.Add(this.txtphonenumber);
+            this.Controls.Add(this.txtaddress);
+            this.Controls.Add(this.txtpob);
+            this.Controls.Add(this.txtdob);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dgcustomer);
+            this.Controls.Add(this.dgsupplier);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btnaddnew);
-            this.Controls.Add(this.txtctphone);
-            this.Controls.Add(this.txtctname);
-            this.Controls.Add(this.txtctid);
+            this.Controls.Add(this.txtsuppliername);
+            this.Controls.Add(this.txtcompayname);
+            this.Controls.Add(this.txtid);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -411,8 +401,9 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmSupplier";
             this.Text = "FrmSupplier";
-            ((System.ComponentModel.ISupportInitialize)(this.dgcustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmSupplier_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgsupplier)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,13 +411,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgcustomer;
+        private System.Windows.Forms.DataGridView dgsupplier;
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnaddnew;
-        private System.Windows.Forms.TextBox txtctphone;
-        private System.Windows.Forms.TextBox txtctname;
-        private System.Windows.Forms.TextBox txtctid;
+        private System.Windows.Forms.TextBox txtsuppliername;
+        private System.Windows.Forms.TextBox txtcompayname;
+        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -437,12 +428,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtdob;
+        private System.Windows.Forms.TextBox txtpob;
+        private System.Windows.Forms.TextBox txtaddress;
+        private System.Windows.Forms.TextBox txtphonenumber;
+        private System.Windows.Forms.PictureBox pu1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
