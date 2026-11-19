@@ -1,54 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ComputerShop_Team6.Controller
+namespace ComputerShop_Team6
 {
-    internal class ControllerSupplier : Model.ModelSupplier
+    public partial class FrmSupplier : Form
     {
-        //Insert Supplier
-        public void InsertSupplier()
+        public FrmSupplier()
         {
-            using (SqlCommand cmd = new SqlCommand())
-            {
-                cmd.Connection = DbConnection.GetSqlConnection();
-                cmd.CommandText = "InsertSupplier";
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.Add("@CompanyName", SqlDbType.NVarChar, 100).Value = CompanyName;
-                cmd.Parameters.Add("@SupplierName", SqlDbType.NVarChar, 100).Value = SupplierName;
-                cmd.Parameters.Add("@DOB", SqlDbType.Date).Value = DOB;
-                cmd.Parameters.Add("@POB", SqlDbType.NVarChar, 255).Value = (object)POB ?? DBNull.Value;
-                cmd.Parameters.Add("@Address", SqlDbType.NVarChar, 255).Value = (object)Address ?? DBNull.Value;
-                cmd.Parameters.Add("@PhoneNumber", SqlDbType.NVarChar, 50).Value = PhoneNumber;
-
-                if (cmd.Connection.State == ConnectionState.Closed)
-                    cmd.Connection.Open();
-
-                cmd.ExecuteNonQuery();
-                cmd.Connection.Close();
-            }
-        } // ← បិទ InsertSupplier
-
-        //View Data
-        public DataTable dt = new DataTable();
-        public DataSet ds = new DataSet();
-        public SqlDataAdapter adapter = new SqlDataAdapter();
-
-        public void ViewData()
+            InitializeComponent();
+        }
+        Functions myfunction = new Functions();
+        Controller.ControllerSupplier mysupplier = new Controller.ControllerSupplier();
+        private void FrmSupplier_Load(object sender, EventArgs e)
         {
-            string sql = "select * from V_Supplier;";
-            SqlCommand cmd = new SqlCommand(sql, DbConnection.GetSqlConnection());
-            adapter.SelectCommand = cmd;
-            ds.Clear();
-            adapter.Fill(ds);
-            dt = ds.Tables[0];
+            myfunction.DisableAllTextAndCombobox(this);
+            btndelete.Enabled = false;
+            btnupdate.Enabled = false;
         }
 
-    } // ← បិទ class
-} // ← បិទ namespace
+        private void btnaddnew_Click(object sender, EventArgs e)
+        {
+            if (btnaddnew.Text == "Add New")
+            {
+                myfunction.EnableAllTextAndCombobox(this);
+                btnaddnew.Text = "Insert Data";
+                btnupdate.Text = "Clear";
+                btnupdate.Enabled = true;
+                txtsupplierid.Enabled = false;
+            }
+            else if (btnaddnew.Text == "Insert Data")
+            {
+                mysupplier.CompanyName = txtcompayname.Text;
+                mysupplier.SupplierName = txtsuppliername.Text;
+                mysupplier.DOB = DateTime.Parse(txtdob.Text);
+                mysupplier.POB = txtpob.Text;
+                mysupplier.Address = txtaddress.Text;
+                mysupplier.PhoneNumber = txtphonenumber.Text;
+                mysupplier.InsertSupplier();
+                MessageBox.Show("Supplier Has Been Inserted", "Insert Data",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                myfunction.ClearField(this);
+                myfunction.DisableAllTextAndCombobox(this);
+                btnaddnew.Text = "Add New";
+                btnupdate.Enabled = false;
+                btnupdate.Text = "Update";
+            }
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            if (btnupdate.Text == "Clear")
+            {
+                myfunction.ClearField(this);
+                btnaddnew.Text = "Add New";
+                btnupdate.Text = "Update";
+                btnupdate.Enabled = false;
+                myfunction.DisableAllTextAndCombobox(this);
+            }
+        }
+    }
+}

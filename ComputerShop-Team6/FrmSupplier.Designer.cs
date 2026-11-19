@@ -200,6 +200,7 @@
             // txtsuppliername
             // 
             this.txtsuppliername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsuppliername.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsuppliername.Location = new System.Drawing.Point(498, 268);
             this.txtsuppliername.Multiline = true;
             this.txtsuppliername.Name = "txtsuppliername";
@@ -209,6 +210,7 @@
             // txtcompayname
             // 
             this.txtcompayname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcompayname.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcompayname.Location = new System.Drawing.Point(498, 187);
             this.txtcompayname.Multiline = true;
             this.txtcompayname.Name = "txtcompayname";
@@ -218,6 +220,7 @@
             // txtsupplierid
             // 
             this.txtsupplierid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsupplierid.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsupplierid.Location = new System.Drawing.Point(498, 108);
             this.txtsupplierid.Multiline = true;
             this.txtsupplierid.Name = "txtsupplierid";
@@ -308,6 +311,7 @@
             // txtdob
             // 
             this.txtdob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdob.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdob.Location = new System.Drawing.Point(498, 353);
             this.txtdob.Multiline = true;
             this.txtdob.Name = "txtdob";
@@ -317,6 +321,7 @@
             // txtpob
             // 
             this.txtpob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpob.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpob.Location = new System.Drawing.Point(1022, 97);
             this.txtpob.Multiline = true;
             this.txtpob.Name = "txtpob";
@@ -326,6 +331,7 @@
             // txtaddress
             // 
             this.txtaddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtaddress.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtaddress.Location = new System.Drawing.Point(1022, 183);
             this.txtaddress.Multiline = true;
             this.txtaddress.Name = "txtaddress";
@@ -335,6 +341,7 @@
             // txtphonenumber
             // 
             this.txtphonenumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtphonenumber.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtphonenumber.Location = new System.Drawing.Point(1022, 354);
             this.txtphonenumber.Multiline = true;
             this.txtphonenumber.Name = "txtphonenumber";
