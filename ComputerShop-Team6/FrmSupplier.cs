@@ -16,47 +16,35 @@ namespace ComputerShop_Team6
         {
             InitializeComponent();
         }
-        
+        Functions myfunction = new Functions();
         private void FrmSupplier_Load(object sender, EventArgs e)
         {
-            txtaddress.Enabled = false;
-            txtcompayname.Enabled = false;
-            txtdob.Enabled = false;
-            txtid.Enabled = false;
-            txtphonenumber.Enabled = false;
-            txtpob.Enabled = false;
-            txtsuppliername.Enabled = false;
+            myfunction.DisableAllTextAndCombobox(this);
             btndelete.Enabled = false;
             btnupdate.Enabled = false;
         }
 
         private void btnaddnew_Click(object sender, EventArgs e)
         {
-            if(btnaddnew.Text == "Add New")
+            if (btnaddnew.Text == "Add New")
             {
-                btnaddnew.Text = "Save";
-                txtaddress.Enabled = true;
-                txtcompayname.Enabled = true;
-                txtdob.Enabled = true;
-                txtid.Enabled = true;
-                txtphonenumber.Enabled = true;
-                txtpob.Enabled = true;
-                txtsuppliername.Enabled = true;
-                btndelete.Enabled = false;
-                btnupdate.Enabled = false;
+                myfunction.EnableAllTextAndCombobox(this);
+                btnaddnew.Text = "Insert Data";
+                btnupdate.Text = "Clear";
+                btnupdate.Enabled = true;
+                txtsupplierid.Enabled = false;
             }
-            else
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            if (btnupdate.Text == "Clear")
             {
+                myfunction.ClearField(this);
                 btnaddnew.Text = "Add New";
-                txtaddress.Enabled = false;
-                txtcompayname.Enabled = false;
-                txtdob.Enabled = false;
-                txtid.Enabled = false;
-                txtphonenumber.Enabled = false;
-                txtpob.Enabled = false;
-                txtsuppliername.Enabled = false;
-                btndelete.Enabled = false;
+                btnupdate.Text = "Update";
                 btnupdate.Enabled = false;
+                myfunction.DisableAllTextAndCombobox(this);
             }
         }
     }

@@ -15,7 +15,7 @@ namespace ComputerShop_Team6.Model
         public string POB { get; set; }             // Place of Birth
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
-        public string Status { get; set; }          // ឬ bool បើអ្នកប្រើ Active/Inactive
+    
         public byte[] Photo { get; set; }           // បើរក្សាទុកជា Image ក្នុង Database
 
         
