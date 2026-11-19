@@ -16,7 +16,7 @@ namespace ComputerShop_Team6.Model
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
     
-        public byte[] Photo { get; set; }           // បើរក្សាទុកជា Image ក្នុង Database
+   
 
         
     }

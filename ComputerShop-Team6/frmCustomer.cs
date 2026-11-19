@@ -16,5 +16,10 @@ namespace ComputerShop_Team6
         {
             InitializeComponent();
         }
+
+        private void frmCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

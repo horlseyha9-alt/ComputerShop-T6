@@ -295,6 +295,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmCustomer";
             this.Text = "frmCustomer";
+            this.Load += new System.EventHandler(this.frmCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgcustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
