@@ -29,17 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.flpProduct = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnShowProduct = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnDetail = new Guna.UI2.WinForms.Guna2Button();
-            this.lbStock = new System.Windows.Forms.Label();
-            this.lbSalePrice = new System.Windows.Forms.Label();
-            this.lbProductName = new System.Windows.Forms.Label();
-            this.lbSKU = new System.Windows.Forms.Label();
-            this.lbCategory = new System.Windows.Forms.Label();
-            this.flpProduct.SuspendLayout();
-            this.pnShowProduct.SuspendLayout();
+            this.txtSearchProduct = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,6 +42,13 @@
             this.label1.Size = new System.Drawing.Size(209, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sale Product";
+            // 
+            // flpProduct
+            // 
+            this.flpProduct.Location = new System.Drawing.Point(20, 144);
+            this.flpProduct.Name = "flpProduct";
+            this.flpProduct.Size = new System.Drawing.Size(873, 590);
+            this.flpProduct.TabIndex = 3;
             // 
             // txtSearchProduct
             // 
@@ -75,93 +73,9 @@
             this.txtSearchProduct.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtSearchProduct.PlaceholderText = "Seach product by name, SKU or barcode";
             this.txtSearchProduct.SelectedText = "";
-            this.txtSearchProduct.Size = new System.Drawing.Size(834, 36);
+            this.txtSearchProduct.Size = new System.Drawing.Size(873, 36);
             this.txtSearchProduct.TabIndex = 1;
-            // 
-            // flpProduct
-            // 
-            this.flpProduct.Controls.Add(this.pnShowProduct);
-            this.flpProduct.Location = new System.Drawing.Point(20, 144);
-            this.flpProduct.Name = "flpProduct";
-            this.flpProduct.Size = new System.Drawing.Size(834, 590);
-            this.flpProduct.TabIndex = 3;
-            // 
-            // pnShowProduct
-            // 
-            this.pnShowProduct.BackColor = System.Drawing.Color.Silver;
-            this.pnShowProduct.BorderColor = System.Drawing.Color.Black;
-            this.pnShowProduct.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.pnShowProduct.Controls.Add(this.btnDetail);
-            this.pnShowProduct.Controls.Add(this.lbStock);
-            this.pnShowProduct.Controls.Add(this.lbSalePrice);
-            this.pnShowProduct.Controls.Add(this.lbProductName);
-            this.pnShowProduct.Controls.Add(this.lbSKU);
-            this.pnShowProduct.Controls.Add(this.lbCategory);
-            this.pnShowProduct.Location = new System.Drawing.Point(3, 3);
-            this.pnShowProduct.Name = "pnShowProduct";
-            this.pnShowProduct.Size = new System.Drawing.Size(274, 244);
-            this.pnShowProduct.TabIndex = 3;
-            // 
-            // btnDetail
-            // 
-            this.btnDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDetail.FillColor = System.Drawing.Color.Black;
-            this.btnDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDetail.ForeColor = System.Drawing.Color.White;
-            this.btnDetail.Location = new System.Drawing.Point(7, 182);
-            this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(253, 45);
-            this.btnDetail.TabIndex = 5;
-            this.btnDetail.Text = "Detail";
-            // 
-            // lbStock
-            // 
-            this.lbStock.AutoSize = true;
-            this.lbStock.Location = new System.Drawing.Point(27, 149);
-            this.lbStock.Name = "lbStock";
-            this.lbStock.Size = new System.Drawing.Size(41, 17);
-            this.lbStock.TabIndex = 4;
-            this.lbStock.Text = "Stock";
-            // 
-            // lbSalePrice
-            // 
-            this.lbSalePrice.AutoSize = true;
-            this.lbSalePrice.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSalePrice.Location = new System.Drawing.Point(15, 99);
-            this.lbSalePrice.Name = "lbSalePrice";
-            this.lbSalePrice.Size = new System.Drawing.Size(92, 25);
-            this.lbSalePrice.TabIndex = 3;
-            this.lbSalePrice.Text = "SalePrice";
-            // 
-            // lbProductName
-            // 
-            this.lbProductName.AutoSize = true;
-            this.lbProductName.Location = new System.Drawing.Point(17, 60);
-            this.lbProductName.Name = "lbProductName";
-            this.lbProductName.Size = new System.Drawing.Size(92, 17);
-            this.lbProductName.TabIndex = 2;
-            this.lbProductName.Text = "ProductName";
-            // 
-            // lbSKU
-            // 
-            this.lbSKU.AutoSize = true;
-            this.lbSKU.Location = new System.Drawing.Point(78, 18);
-            this.lbSKU.Name = "lbSKU";
-            this.lbSKU.Size = new System.Drawing.Size(29, 17);
-            this.lbSKU.TabIndex = 1;
-            this.lbSKU.Text = "sku";
-            // 
-            // lbCategory
-            // 
-            this.lbCategory.AutoSize = true;
-            this.lbCategory.Location = new System.Drawing.Point(17, 18);
-            this.lbCategory.Name = "lbCategory";
-            this.lbCategory.Size = new System.Drawing.Size(33, 17);
-            this.lbCategory.TabIndex = 0;
-            this.lbCategory.Text = "cate";
+            this.txtSearchProduct.TextChanged += new System.EventHandler(this.txtSearchProduct_TextChanged);
             // 
             // frmSale
             // 
@@ -177,9 +91,6 @@
             this.Name = "frmSale";
             this.Text = "frmSale";
             this.Load += new System.EventHandler(this.frmSale_Load);
-            this.flpProduct.ResumeLayout(false);
-            this.pnShowProduct.ResumeLayout(false);
-            this.pnShowProduct.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,12 +101,5 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchProduct;
         private System.Windows.Forms.FlowLayoutPanel flpProduct;
-        private Guna.UI2.WinForms.Guna2Panel pnShowProduct;
-        private Guna.UI2.WinForms.Guna2Button btnDetail;
-        private System.Windows.Forms.Label lbStock;
-        private System.Windows.Forms.Label lbSalePrice;
-        private System.Windows.Forms.Label lbProductName;
-        private System.Windows.Forms.Label lbSKU;
-        private System.Windows.Forms.Label lbCategory;
     }
 }
