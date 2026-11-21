@@ -44,5 +44,10 @@ namespace ComputerShop_Team6
         {
             OpenForm(new frmCategory());
         }
+
+        private void btnSupplier_Click(object sender, EventArgs e)
+        {
+            OpenForm(new frmSupplier());
+        }
     }
 }
