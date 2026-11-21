@@ -52,7 +52,7 @@ namespace ComputerShop_Team6
             // Uses your existing 'conn' object directly
             SqlCommand cmd = new SqlCommand("sp_show_supplier", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@status", status); // Assuming you want to show active categories
+           // cmd.Parameters.AddWithValue("@status", status); // Assuming you want to show active categories
 
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
