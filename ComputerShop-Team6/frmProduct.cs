@@ -47,12 +47,12 @@ namespace ComputerShop_Team6
 
             cboCategory.SelectedIndex = -1; // Optional: leaves it unselected by default
         }
-        private void Show_Supplier(int status)
+        private void Show_Supplier()
         {
             // Uses your existing 'conn' object directly
             SqlCommand cmd = new SqlCommand("sp_show_supplier", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-           // cmd.Parameters.AddWithValue("@status", status); // Assuming you want to show active categories
+            //cmd.Parameters.AddWithValue("@status", status); // Assuming you want to show active categories
 
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -326,7 +326,7 @@ namespace ComputerShop_Team6
         {
             ShowProduct(1);
             Show_Category(1);
-            Show_Supplier(1);
+            Show_Supplier();
             txtProductId.Visible = false;
             txtUnitPrice.Text = 0.ToString();
             txtQtyInStock.Text = 0.ToString();
