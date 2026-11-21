@@ -134,6 +134,7 @@
             this.btnCustomer.TabIndex = 7;
             this.btnCustomer.Text = "Customer";
             this.btnCustomer.UseVisualStyleBackColor = false;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 
             // btnSaleDetail
             // 
