@@ -23,6 +23,7 @@ namespace ComputerShop_Team6
             myfunction.DisableAllTextAndCombobox(this);
             btndelete.Enabled = false;
             btnupdate.Enabled = false;
+            LoadSupplier();
         }
 
         private void btnaddnew_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace ComputerShop_Team6
                 mysupplier.Address = txtaddress.Text;
                 mysupplier.PhoneNumber = txtphonenumber.Text;
                 mysupplier.InsertSupplier();
+                LoadSupplier();
                 MessageBox.Show("Supplier Has Been Inserted", "Insert Data",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 myfunction.ClearField(this);
                 myfunction.DisableAllTextAndCombobox(this);
@@ -63,6 +65,53 @@ namespace ComputerShop_Team6
                 btnupdate.Enabled = false;
                 myfunction.DisableAllTextAndCombobox(this);
             }
+            {
+                mysupplier.SupplierID = int.Parse(txtsupplierid.Text);
+                mysupplier.CompanyName = txtcompayname.Text;
+                mysupplier.SupplierName = txtsuppliername.Text;
+                mysupplier.DOB = DateTime.Parse(txtdob.Text);
+                mysupplier.POB = txtpob.Text;
+                mysupplier.Address = txtaddress.Text;
+                mysupplier.PhoneNumber = txtphonenumber.Text;
+
+                mysupplier.UpdateSupplier();
+                LoadSupplier();   // Refresh Grid
+
+                MessageBox.Show("Supplier Has Been Updated", "Update Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                myfunction.ClearField(this);
+                myfunction.DisableAllTextAndCombobox(this);
+                btnupdate.Enabled = false;
+                btndelete.Enabled = false;
+            }
+        }
+        
+        private void LoadSupplier()
+        {
+            mysupplier.ViewData();
+            dgvsupplier.DataSource = mysupplier.dt;
+            dgvsupplier.AutoGenerateColumns = false;
+        }
+
+        private void dgvsupplier_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            DataGridViewRow row = dgvsupplier.Rows[e.RowIndex];
+            txtsupplierid.Text = row.Cells[0].Value.ToString();
+            txtcompayname.Text = row.Cells[1].Value.ToString();
+            txtsuppliername.Text = row.Cells[2].Value.ToString();
+            txtdob.Text = Convert.ToDateTime(row.Cells[3].Value).ToString("yyyy-MM-dd");
+            txtpob.Text = row.Cells[4].Value.ToString();
+            txtaddress.Text = row.Cells[5].Value.ToString();
+            txtphonenumber.Text = row.Cells[6].Value.ToString();
+
+            myfunction.EnableAllTextAndCombobox(this);
+            txtsupplierid.Enabled = false;
+            btnupdate.Text = "Update";
+            btnupdate.Enabled = true;
+            btndelete.Enabled = true;
+            btnaddnew.Text = "Add New";
+
         }
     }
 }
