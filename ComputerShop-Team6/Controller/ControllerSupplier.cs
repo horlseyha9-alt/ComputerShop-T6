@@ -70,6 +70,25 @@ namespace ComputerShop_Team6.Controller
                 cmd.Connection.Close();
             }
         }
+        //Delete Supplier
+        public void DeleteSupplier()
+        {
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.Connection = DbConnection.GetSqlConnection();
+                cmd.CommandText = "DeleteSupplier";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add("@SupplierId", SqlDbType.Int).Value = SupplierID;
+
+                if (cmd.Connection.State == ConnectionState.Closed)
+                {
+                    cmd.Connection.Open();
+                }
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+            }
+        }
 
     }
 }
