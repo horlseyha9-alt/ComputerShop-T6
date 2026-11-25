@@ -16,5 +16,10 @@ namespace ComputerShop_Team6
         {
             InitializeComponent();
         }
+
+        private void frmUser_Load(object sender, EventArgs e)
+        {
+            txtUserID.Enabled = false;
+        }
     }
 }
