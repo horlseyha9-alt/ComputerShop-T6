@@ -35,14 +35,30 @@ namespace ComputerShop_Team6
             OpenForm(new frmProduct());
         }
 
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+            OpenForm(new frmSale());
+        }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            OpenForm(new frmCategory());
+        }
+
         private void btnSupplier_Click(object sender, EventArgs e)
         {
             OpenForm(new FrmSupplier());
         }
 
+        private void btnSaleDetail_Click(object sender, EventArgs e)
+        {
+            OpenForm(new frmStockIn());
+        }
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             OpenForm(new frmCustomer());
         }
+
+        
     }
 }

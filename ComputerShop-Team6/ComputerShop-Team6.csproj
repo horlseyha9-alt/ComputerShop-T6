@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CartItem.Designer.cs">
+      <DependentUpon>CartItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\ControllerCustomer.cs" />
     <Compile Include="Controller\ControllerSupplier.cs" />
     <Compile Include="DbConnection.cs" />
@@ -91,6 +97,24 @@
     <Compile Include="frmProduct.Designer.cs">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSale.Designer.cs">
+      <DependentUpon>frmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaleDetail.Designer.cs">
+      <DependentUpon>frmSaleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockIn.Designer.cs">
+      <DependentUpon>frmStockIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,11 +133,20 @@
     <Compile Include="FromGP.Designer.cs">
       <DependentUpon>FromGP.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductCard.Designer.cs">
+      <DependentUpon>ProductCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Functions.cs" />
     <Compile Include="Model\ModelCustomer.cs" />
     <Compile Include="Model\ModelSupplier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CartItem.resx">
+      <DependentUpon>CartItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,11 +162,20 @@
     <EmbeddedResource Include="frmProduct.resx">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSale.resx">
+      <DependentUpon>frmSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockIn.resx">
+      <DependentUpon>frmStockIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSupplier.resx">
       <DependentUpon>FrmSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUser.resx">
       <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductCard.resx">
+      <DependentUpon>ProductCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,6 +203,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Computer Shop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
