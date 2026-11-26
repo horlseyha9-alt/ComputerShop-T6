@@ -28,22 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtctid = new System.Windows.Forms.TextBox();
-            this.txtctname = new System.Windows.Forms.TextBox();
-            this.txtctphone = new System.Windows.Forms.TextBox();
-            this.txtctaddress = new System.Windows.Forms.TextBox();
-            this.txtctemail = new System.Windows.Forms.TextBox();
+            this.txtcustomerid = new System.Windows.Forms.TextBox();
+            this.txtcustomername = new System.Windows.Forms.TextBox();
+            this.txtphonenumber = new System.Windows.Forms.TextBox();
+            this.txtcustomeraddress = new System.Windows.Forms.TextBox();
+            this.txtcustomeremail = new System.Windows.Forms.TextBox();
             this.btnaddnew = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
-            this.dgcustomer = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgcustomer)).BeginInit();
+            this.dgvcustomer = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,12 +93,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(68, 217);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(90, 267);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 25);
+            this.label4.Size = new System.Drawing.Size(85, 33);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Phone";
+            this.label4.Text = " Phone Number";
             // 
             // label5
             // 
@@ -113,54 +121,49 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Email";
             // 
-            // txtctid
+            // txtcustomerid
             // 
             this.txtctid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctid.Location = new System.Drawing.Point(236, 100);
-            this.txtctid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtctid.Location = new System.Drawing.Point(315, 123);
             this.txtctid.Multiline = true;
             this.txtctid.Name = "txtctid";
-            this.txtctid.Size = new System.Drawing.Size(251, 35);
+            this.txtctid.Size = new System.Drawing.Size(334, 43);
             this.txtctid.TabIndex = 6;
             // 
-            // txtctname
+            // txtcustomername
             // 
             this.txtctname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctname.Location = new System.Drawing.Point(236, 149);
-            this.txtctname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtctname.Location = new System.Drawing.Point(315, 183);
             this.txtctname.Multiline = true;
             this.txtctname.Name = "txtctname";
-            this.txtctname.Size = new System.Drawing.Size(251, 35);
+            this.txtctname.Size = new System.Drawing.Size(334, 43);
             this.txtctname.TabIndex = 7;
             // 
-            // txtctphone
+            // txtphonenumber
             // 
             this.txtctphone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctphone.Location = new System.Drawing.Point(236, 209);
-            this.txtctphone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtctphone.Location = new System.Drawing.Point(315, 257);
             this.txtctphone.Multiline = true;
             this.txtctphone.Name = "txtctphone";
-            this.txtctphone.Size = new System.Drawing.Size(251, 35);
+            this.txtctphone.Size = new System.Drawing.Size(334, 43);
             this.txtctphone.TabIndex = 8;
             // 
-            // txtctaddress
+            // txtcustomeraddress
             // 
             this.txtctaddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctaddress.Location = new System.Drawing.Point(636, 100);
-            this.txtctaddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtctaddress.Location = new System.Drawing.Point(848, 123);
             this.txtctaddress.Multiline = true;
             this.txtctaddress.Name = "txtctaddress";
-            this.txtctaddress.Size = new System.Drawing.Size(251, 75);
+            this.txtctaddress.Size = new System.Drawing.Size(334, 92);
             this.txtctaddress.TabIndex = 9;
             // 
-            // txtctemail
+            // txtcustomeremail
             // 
             this.txtctemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtctemail.Location = new System.Drawing.Point(638, 209);
-            this.txtctemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtctemail.Location = new System.Drawing.Point(851, 257);
             this.txtctemail.Multiline = true;
             this.txtctemail.Name = "txtctemail";
-            this.txtctemail.Size = new System.Drawing.Size(249, 35);
+            this.txtctemail.Size = new System.Drawing.Size(331, 43);
             this.txtctemail.TabIndex = 10;
             // 
             // btnaddnew
@@ -175,6 +178,7 @@
             this.btnaddnew.TabIndex = 11;
             this.btnaddnew.Text = "Add New";
             this.btnaddnew.UseVisualStyleBackColor = false;
+            this.btnaddnew.Click += new System.EventHandler(this.btnaddnew_Click);
             // 
             // btnupdate
             // 
@@ -188,6 +192,7 @@
             this.btnupdate.TabIndex = 12;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btndelete
             // 
@@ -202,31 +207,102 @@
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = false;
             // 
-            // dgcustomer
+            // dgvcustomer
+            // 
+            this.dgvcustomer.AllowUserToAddRows = false;
+            this.dgvcustomer.AllowUserToDeleteRows = false;
+            this.dgvcustomer.AllowUserToOrderColumns = true;
+            this.dgvcustomer.AllowUserToResizeColumns = false;
+            this.dgvcustomer.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvcustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvcustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvcustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvcustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvcustomer.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvcustomer.Location = new System.Drawing.Point(35, 345);
+            this.dgvcustomer.Name = "dgvcustomer";
+            this.dgvcustomer.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvcustomer.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvcustomer.RowTemplate.Height = 24;
+            this.dgvcustomer.Size = new System.Drawing.Size(1546, 448);
+            this.dgvcustomer.TabIndex = 14;
+            this.dgvcustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcustomer_CellClick);
+            this.dgvcustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcustomer_CellContentClick);
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column1.HeaderText = "Customer ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Customer Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Phone Number";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Address";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
             // 
             this.dgcustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgcustomer.Location = new System.Drawing.Point(22, 266);
-            this.dgcustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgcustomer.Location = new System.Drawing.Point(30, 328);
             this.dgcustomer.Name = "dgcustomer";
             this.dgcustomer.RowHeadersWidth = 51;
             this.dgcustomer.RowTemplate.Height = 24;
-            this.dgcustomer.Size = new System.Drawing.Size(1142, 270);
+            this.dgcustomer.Size = new System.Drawing.Size(1523, 332);
             this.dgcustomer.TabIndex = 14;
             // 
             // frmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1195, 583);
+            this.ClientSize = new System.Drawing.Size(1593, 717);
             this.Controls.Add(this.dgcustomer);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btnaddnew);
-            this.Controls.Add(this.txtctemail);
-            this.Controls.Add(this.txtctaddress);
-            this.Controls.Add(this.txtctphone);
-            this.Controls.Add(this.txtctname);
-            this.Controls.Add(this.txtctid);
+            this.Controls.Add(this.txtcustomeremail);
+            this.Controls.Add(this.txtcustomeraddress);
+            this.Controls.Add(this.txtphonenumber);
+            this.Controls.Add(this.txtcustomername);
+            this.Controls.Add(this.txtcustomerid);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -237,7 +313,8 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCustomer";
             this.Text = "frmCustomer";
-            ((System.ComponentModel.ISupportInitialize)(this.dgcustomer)).EndInit();
+            this.Load += new System.EventHandler(this.frmCustomer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,14 +328,19 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtctid;
-        private System.Windows.Forms.TextBox txtctname;
-        private System.Windows.Forms.TextBox txtctphone;
-        private System.Windows.Forms.TextBox txtctaddress;
-        private System.Windows.Forms.TextBox txtctemail;
+        private System.Windows.Forms.TextBox txtcustomerid;
+        private System.Windows.Forms.TextBox txtcustomername;
+        private System.Windows.Forms.TextBox txtphonenumber;
+        private System.Windows.Forms.TextBox txtcustomeraddress;
+        private System.Windows.Forms.TextBox txtcustomeremail;
         private System.Windows.Forms.Button btnaddnew;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.DataGridView dgcustomer;
+        private System.Windows.Forms.DataGridView dgvcustomer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
