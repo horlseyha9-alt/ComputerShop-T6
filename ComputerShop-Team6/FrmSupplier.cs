@@ -131,7 +131,7 @@ namespace ComputerShop_Team6
             btnupdate.Text = "Update";
             btnupdate.Enabled = true;
             btndelete.Enabled = true;
-            btnaddnew.Text = "Add New";
+            btnaddnew.Enabled = false;
         }
 
         private void btndelete_Click(object sender, EventArgs e)
@@ -184,6 +184,11 @@ namespace ComputerShop_Team6
         {
             dgvsupplier.ClearSelection();
             dgvsupplier.CurrentCell = null;
+        }
+
+        private void dgvsupplier_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

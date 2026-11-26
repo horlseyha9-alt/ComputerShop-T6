@@ -93,6 +93,7 @@
             this.dgvsupplier.Size = new System.Drawing.Size(1549, 332);
             this.dgvsupplier.TabIndex = 29;
             this.dgvsupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsupplier_CellClick);
+            this.dgvsupplier.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsupplier_CellContentClick);
             this.dgvsupplier.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvsupplier_CellFormatting);
             // 
             // Column1

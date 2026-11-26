@@ -40,7 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtcustomerid = new System.Windows.Forms.TextBox();
             this.txtcustomername = new System.Windows.Forms.TextBox();
-            this.txtcustomerphone = new System.Windows.Forms.TextBox();
+            this.txtphonenumber = new System.Windows.Forms.TextBox();
             this.txtcustomeraddress = new System.Windows.Forms.TextBox();
             this.txtcustomeremail = new System.Windows.Forms.TextBox();
             this.btnaddnew = new System.Windows.Forms.Button();
@@ -134,14 +134,14 @@
             this.txtcustomername.Size = new System.Drawing.Size(334, 43);
             this.txtcustomername.TabIndex = 7;
             // 
-            // txtcustomerphone
+            // txtphonenumber
             // 
-            this.txtcustomerphone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtcustomerphone.Location = new System.Drawing.Point(315, 257);
-            this.txtcustomerphone.Multiline = true;
-            this.txtcustomerphone.Name = "txtcustomerphone";
-            this.txtcustomerphone.Size = new System.Drawing.Size(334, 43);
-            this.txtcustomerphone.TabIndex = 8;
+            this.txtphonenumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtphonenumber.Location = new System.Drawing.Point(315, 257);
+            this.txtphonenumber.Multiline = true;
+            this.txtphonenumber.Name = "txtphonenumber";
+            this.txtphonenumber.Size = new System.Drawing.Size(334, 43);
+            this.txtphonenumber.TabIndex = 8;
             // 
             // txtcustomeraddress
             // 
@@ -172,6 +172,7 @@
             this.btnaddnew.TabIndex = 11;
             this.btnaddnew.Text = "Add New";
             this.btnaddnew.UseVisualStyleBackColor = false;
+            this.btnaddnew.Click += new System.EventHandler(this.btnaddnew_Click);
             // 
             // btnupdate
             // 
@@ -184,6 +185,7 @@
             this.btnupdate.TabIndex = 12;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btndelete
             // 
@@ -239,6 +241,8 @@
             this.dgvcustomer.RowTemplate.Height = 24;
             this.dgvcustomer.Size = new System.Drawing.Size(1546, 448);
             this.dgvcustomer.TabIndex = 14;
+            this.dgvcustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcustomer_CellClick);
+            this.dgvcustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcustomer_CellContentClick);
             // 
             // Column1
             // 
@@ -284,7 +288,7 @@
             this.Controls.Add(this.btnaddnew);
             this.Controls.Add(this.txtcustomeremail);
             this.Controls.Add(this.txtcustomeraddress);
-            this.Controls.Add(this.txtcustomerphone);
+            this.Controls.Add(this.txtphonenumber);
             this.Controls.Add(this.txtcustomername);
             this.Controls.Add(this.txtcustomerid);
             this.Controls.Add(this.label6);
@@ -312,7 +316,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtcustomerid;
         private System.Windows.Forms.TextBox txtcustomername;
-        private System.Windows.Forms.TextBox txtcustomerphone;
+        private System.Windows.Forms.TextBox txtphonenumber;
         private System.Windows.Forms.TextBox txtcustomeraddress;
         private System.Windows.Forms.TextBox txtcustomeremail;
         private System.Windows.Forms.Button btnaddnew;
