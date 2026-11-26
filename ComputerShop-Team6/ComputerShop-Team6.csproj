@@ -109,6 +109,7 @@
       <DependentUpon>FromGP.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions.cs" />
+    <Compile Include="Model\ModelCustomer.cs" />
     <Compile Include="Model\ModelSupplier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

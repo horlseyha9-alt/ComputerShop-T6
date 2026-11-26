@@ -164,8 +164,7 @@ namespace ComputerShop_Team6
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show("Cannot delete this supplier. It may be used in other records.\n\n" + ex.Message,
-                        "Delete Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Cannot delete this supplier. It may be used in other records.\n\n" + ex.Message,"Delete Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
