@@ -61,7 +61,7 @@
             this.paMenu.Location = new System.Drawing.Point(0, 0);
             this.paMenu.Margin = new System.Windows.Forms.Padding(2);
             this.paMenu.Name = "paMenu";
-            this.paMenu.Size = new System.Drawing.Size(150, 500);
+            this.paMenu.Size = new System.Drawing.Size(203, 500);
             this.paMenu.TabIndex = 0;
             // 
             // btnSale
@@ -147,8 +147,9 @@
             this.btnSaleDetail.Name = "btnSaleDetail";
             this.btnSaleDetail.Size = new System.Drawing.Size(116, 33);
             this.btnSaleDetail.TabIndex = 6;
-            this.btnSaleDetail.Text = "Sale Detail";
+            this.btnSaleDetail.Text = "Stock ";
             this.btnSaleDetail.UseVisualStyleBackColor = false;
+            this.btnSaleDetail.Click += new System.EventHandler(this.btnSaleDetail_Click);
             // 
             // btnSupplier
             // 
@@ -224,10 +225,10 @@
             // paMain
             // 
             this.paMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paMain.Location = new System.Drawing.Point(150, 0);
+            this.paMain.Location = new System.Drawing.Point(203, 0);
             this.paMain.Margin = new System.Windows.Forms.Padding(2);
             this.paMain.Name = "paMain";
-            this.paMain.Size = new System.Drawing.Size(902, 500);
+            this.paMain.Size = new System.Drawing.Size(849, 500);
             this.paMain.TabIndex = 1;
             // 
             // FrmMain
