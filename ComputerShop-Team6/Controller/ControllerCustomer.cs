@@ -51,6 +51,25 @@ namespace ComputerShop_Team6.Controller
                 cmd.Connection.Close();
             }
         }
+        //Delete Customer
+        public void DeleteCustomer()
+        {
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.Connection = DbConnection.GetSqlConnection();
+                cmd.CommandText = "DeleteCustomer";
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add("@CustomerId", SqlDbType.Int).Value = CustomerID;
+
+                if (cmd.Connection.State == ConnectionState.Closed)
+                {
+                    cmd.Connection.Open();
+                }
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+            }
+        }
         //View Data
         public DataTable dt = new DataTable();
         public DataSet ds = new DataSet();

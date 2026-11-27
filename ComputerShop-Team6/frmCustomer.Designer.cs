@@ -119,6 +119,7 @@
             // txtcustomerid
             // 
             this.txtcustomerid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcustomerid.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcustomerid.Location = new System.Drawing.Point(315, 123);
             this.txtcustomerid.Multiline = true;
             this.txtcustomerid.Name = "txtcustomerid";
@@ -128,6 +129,7 @@
             // txtcustomername
             // 
             this.txtcustomername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcustomername.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcustomername.Location = new System.Drawing.Point(315, 183);
             this.txtcustomername.Multiline = true;
             this.txtcustomername.Name = "txtcustomername";
@@ -137,6 +139,7 @@
             // txtphonenumber
             // 
             this.txtphonenumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtphonenumber.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtphonenumber.Location = new System.Drawing.Point(315, 257);
             this.txtphonenumber.Multiline = true;
             this.txtphonenumber.Name = "txtphonenumber";
@@ -146,6 +149,7 @@
             // txtcustomeraddress
             // 
             this.txtcustomeraddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcustomeraddress.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcustomeraddress.Location = new System.Drawing.Point(848, 123);
             this.txtcustomeraddress.Multiline = true;
             this.txtcustomeraddress.Name = "txtcustomeraddress";
@@ -155,6 +159,7 @@
             // txtcustomeremail
             // 
             this.txtcustomeremail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtcustomeremail.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcustomeremail.Location = new System.Drawing.Point(851, 257);
             this.txtcustomeremail.Multiline = true;
             this.txtcustomeremail.Name = "txtcustomeremail";
@@ -198,6 +203,7 @@
             this.btndelete.TabIndex = 13;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = false;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // dgvcustomer
             // 

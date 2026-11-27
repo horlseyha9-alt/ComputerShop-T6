@@ -123,5 +123,43 @@ namespace ComputerShop_Team6
             btnupdate.Enabled = true;
             btndelete.Enabled = true;
         }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtcustomerid.Text))
+            {
+                MessageBox.Show("Please select a customer to delete.", "Delete Data",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to delete this customer?", "Delete Data",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    mycustomer.CustomerID = int.Parse(txtcustomerid.Text);
+                    mycustomer.DeleteCustomer();
+                    LoadCustomer();
+
+                    MessageBox.Show("Customer Has Been Deleted", "Delete Data",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    myfunction.ClearField(this);
+                    myfunction.DisableAllTextAndCombobox(this);
+                    btnupdate.Enabled = false;
+                    btndelete.Enabled = false;
+                    btnaddnew.Text = "Add New";
+                    btnupdate.Text = "Update";
+                }
+                catch (System.Data.SqlClient.SqlException ex)
+                {
+                    MessageBox.Show("Cannot delete this customer. It may be used in other records.\n\n" + ex.Message,"Delete Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
