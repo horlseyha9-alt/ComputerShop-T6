@@ -53,6 +53,7 @@ namespace ComputerShop_Team6
         private void btnSaleDetail_Click(object sender, EventArgs e)
         {
             OpenForm(new frmStockIn());
+        }
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             OpenForm(new frmCustomer());
